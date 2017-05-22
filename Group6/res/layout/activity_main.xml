@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.group6.activity.MainActivity" >
+
+    <RadioGroup
+        android:id="@+id/rg_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_task"
+            style="@style/main_rb"
+            android:text="@string/rb_task" />
+
+        <RadioButton
+            android:id="@+id/rb_require"
+            style="@style/main_rb"
+            android:text="@string/rb_require" />
+
+        <RadioButton
+            android:id="@+id/rb_item"
+            style="@style/main_rb"
+            android:text="@string/rb_item" />
+
+        <RadioButton
+            android:id="@+id/rb_group"
+            style="@style/main_rb"
+            android:text="@string/rb_group" />
+
+        <RadioButton
+            android:id="@+id/rb_myinfo"
+            style="@style/main_rb"
+            android:text="@string/rb_myinfo" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rg_menu"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/ll_content"
+        android:background="?android:attr/listDivider" />
+
+</RelativeLayout>

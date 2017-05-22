@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.group6.activity.UserDetailActivity" >
+
+    <LinearLayout
+        style="@style/ll_details"
+        android:layout_marginTop="100dip" >
+
+        <TextView
+            style="@style/tv_details"
+            android:text="员工姓名:" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            style="@style/tv_details_content" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ll_details" >
+
+        <TextView
+            style="@style/tv_details"
+            android:text="登录密码:" />
+
+        <TextView
+            android:id="@+id/tv_user_pwd"
+            style="@style/tv_details_content" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ll_details" >
+
+        <TextView
+            style="@style/tv_details"
+            android:text="所属部门:" />
+
+        <TextView
+            android:id="@+id/tv_user_dept"
+            style="@style/tv_details_content" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ll_details" >
+
+        <TextView
+            style="@style/tv_details"
+            android:text="任务数量:" />
+
+        <TextView
+            android:id="@+id/tv_user_numOfrs"
+            style="@style/tv_details_content" />
+    </LinearLayout>
+
+</LinearLayout>

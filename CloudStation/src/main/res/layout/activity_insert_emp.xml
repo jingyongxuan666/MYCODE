@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hzr.cloudstation.InsertEmpActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_myTitle_ie"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/mainColor"
+        android:paddingTop="20dp"
+        app:popupTheme="@style/Widget.AppCompat.SearchView.ActionBar" />
+    <TextView
+        android:id="@+id/tv_newEmpId"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="22dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="编号：20131308118"
+        />
+    <com.hzr.cloudstation.myView.ClearEditText
+        android:id="@+id/et_empName"
+        app:myHint="@string/empName"
+        style="@style/LoginET"></com.hzr.cloudstation.myView.ClearEditText>
+    <com.hzr.cloudstation.myView.ClearEditText
+        android:id="@+id/et_empTel"
+        app:myHint="@string/empTel"
+        style="@style/LoginET"></com.hzr.cloudstation.myView.ClearEditText>
+    <Button
+        android:id="@+id/btn_addEmp"
+        style="@style/loginBtn"
+        android:text="添加"
+        android:background="@drawable/login_btn_selector"/>
+</LinearLayout>

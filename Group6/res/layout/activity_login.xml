@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.group6.activity.LoginActivity" >
+
+    <TextView
+        style="@style/login_tv_logo"
+        android:text="@string/login_welcome" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dip" >
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <EditText
+                android:id="@+id/login_name"
+                style="@style/login_et"
+                android:drawableStart="@drawable/ic_person"
+                android:hint="@string/login_name_hint" />
+
+            <ImageButton
+                android:id="@+id/ib_name"
+                style="@style/login_ib"
+                android:layout_alignEnd="@id/login_name" />
+        </RelativeLayout>
+
+        <Spinner
+            android:id="@+id/sp_dept"
+            android:layout_width="100dip"
+            android:layout_height="50dip"
+            android:entries="@array/dept" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/login_pwd"
+            style="@style/login_et"
+            android:layout_centerVertical="true"
+            android:drawableStart="@drawable/ic_secure"
+            android:hint="@string/login_password_hint"
+            android:inputType="textPassword" />
+
+        <ImageButton
+            android:id="@+id/ib_pwd"
+            style="@style/login_ib"
+            android:layout_alignEnd="@id/login_pwd" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        style="@style/login_btn"
+        android:background="@drawable/btn_login_selector"
+        android:text="@string/login_button" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dip"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/cb_rem_pwd"
+            style="@style/login_cb"
+            android:layout_alignParentStart="true"
+            android:text="@string/rem_info" />
+
+        <CheckBox
+            android:id="@+id/cb_autoLogin"
+            style="@style/login_cb"
+            android:layout_toEndOf="@id/cb_rem_pwd"
+            android:text="@string/autoLogin" />
+
+        <Button
+            android:id="@+id/forget_pwd_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:layout_alignBaseline="@id/cb_autoLogin"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/forget_pwd"
+            android:text="@string/forget_pwd"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

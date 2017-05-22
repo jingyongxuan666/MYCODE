@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".ExpressDetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_myTitle_ed"
+        popupTheme="@style/Widget.AppCompat.SearchView.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/mainColor"
+        android:paddingTop="20dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <com.hzr.cloudstation.myView.tvAndTv
+                android:id="@+id/tt_expId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.hzr.cloudstation.myView.tvAndTv>
+            <com.hzr.cloudstation.myView.tvAndTv
+                android:id="@+id/tt_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.hzr.cloudstation.myView.tvAndTv>
+            <com.hzr.cloudstation.myView.tvAndTv
+                android:id="@+id/tt_addTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.hzr.cloudstation.myView.tvAndTv>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收件人信息"
+                android:textSize="16sp" />
+
+            <com.hzr.cloudstation.myView.tvAndTv
+                android:id="@+id/tt_recName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.hzr.cloudstation.myView.tvAndTv>
+
+            <com.hzr.cloudstation.myView.tvAndTv
+                android:id="@+id/tt_recAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.hzr.cloudstation.myView.tvAndTv>
+
+            <com.hzr.cloudstation.myView.tvAndTv
+                android:id="@+id/tt_recTel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.hzr.cloudstation.myView.tvAndTv>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="寄件人信息"
+                android:textSize="16sp" />
+
+            <com.hzr.cloudstation.myView.tvAndTv
+                android:id="@+id/tt_senderName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.hzr.cloudstation.myView.tvAndTv>
+
+            <com.hzr.cloudstation.myView.tvAndTv
+                android:id="@+id/tt_senderTel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.hzr.cloudstation.myView.tvAndTv>
+
+            <com.hzr.cloudstation.myView.tvAndTv
+                android:id="@+id/tt_senderAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.hzr.cloudstation.myView.tvAndTv>
+
+            <com.hzr.cloudstation.myView.tvAndTv
+                android:id="@+id/tt_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.hzr.cloudstation.myView.tvAndTv>
+
+            <com.hzr.cloudstation.myView.tvAndTv
+                android:id="@+id/tt_empMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.hzr.cloudstation.myView.tvAndTv>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="派件员："
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_empMsg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="点击选择快递员"
+                    android:textColor="@color/mainColor"
+                    android:autoLink="all"
+                    android:textSize="18sp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="重量："
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_weight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="千克"
+                    android:textSize="22sp" />
+            </LinearLayout>
+            <com.hzr.cloudstation.myView.tvAndTv
+                android:id="@+id/tt_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.hzr.cloudstation.myView.tvAndTv>
+
+            <com.hzr.cloudstation.myView.tvAndTv
+                android:id="@+id/tt_fee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.hzr.cloudstation.myView.tvAndTv>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="当前站点："
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_curStation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@android:drawable/edit_text"
+                    android:hint="请输入当前站点" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_updateExpMsg"
+                style="@style/loginBtn"
+                android:text="保存"
+                android:layout_marginBottom="50dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

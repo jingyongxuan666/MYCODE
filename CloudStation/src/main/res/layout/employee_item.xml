@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="100dp"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/tv_empId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_gray"
+        android:layout_alignParentTop="true"
+        android:textSize="16sp"
+        android:text="工号：20131308118"/>
+    <!--<View-->
+        <!--android:layout_below="@id/tv_empId"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dip"-->
+        <!--android:background="@color/main_gray_light" />-->
+    <TextView
+        android:id="@+id/tv_empName"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textSize="25sp"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:text="张三"
+        android:layout_marginLeft="20dp" />
+    <TextView
+        android:id="@+id/tv_empTel"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/main_gray"
+        android:text="hah"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="80dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!--<View-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_below="@id/tv_empName"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dip"-->
+        <!--android:background="@color/main_gray_light" />-->
+
+    <Button
+        android:id="@+id/btn_empDel"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:background="@android:color/transparent"
+        android:text="删除"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/main_gray"/>
+    <Button
+        android:id="@+id/btn_empEdit"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:background="@android:color/transparent"
+        android:text="编辑"
+        android:layout_toLeftOf="@id/btn_empDel"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/main_gray"/>
+
+
+</RelativeLayout>

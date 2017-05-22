@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_manage_express"
+        android:text="管理快递"
+        style="@style/express_menu"/>
+    <Button
+        android:id="@+id/btn_my_express"
+        android:text="我的快递"
+        style="@style/express_menu" />
+    <Button
+        android:id="@+id/btn_add_express"
+        android:text="添加快递"
+        style="@style/express_menu" />
+</LinearLayout>

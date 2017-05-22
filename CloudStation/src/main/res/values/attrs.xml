@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ClearEditText">
+        <attr name="myHint" format="reference"/>
+        <attr name="myInputType">
+            <flag name="password" value="1"/>
+            <flag name="text" value="2"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="tvAndTv">
+
+    </declare-styleable>
+</resources>

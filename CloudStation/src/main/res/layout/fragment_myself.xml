@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@android:color/background_light">
+        <TextView
+            android:id="@+id/tv_loginName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="admin"
+            android:gravity="center_vertical"
+            android:drawablePadding="5dp"
+            android:paddingLeft="5dp"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/ic_contact_picture"/>
+        <TextView
+            android:id="@+id/tv_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="管理员"
+            android:textSize="20sp"
+            android:textColor="@color/main_gray"
+            android:layout_marginLeft="50dp"/>
+
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lv_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/background_light">
+
+    </ListView>
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/exit"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/exit_btn_selector"/>
+</LinearLayout>

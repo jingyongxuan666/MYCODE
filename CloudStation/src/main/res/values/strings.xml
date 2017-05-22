@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">云端驿站</string>
+    <string name="user_name">用户名</string>
+    <string name="password">密码</string>
+    <string name="login_btn">登录</string>
+    <string name="register">注册</string>
+    <string name="user_name_please">请设置用户名</string>
+    <string name="password_please">请设置密码</string>
+    <string name="password_confirm_please">请确认密码</string>
+    <string name="express">快 递</string>
+    <string name="group">员 工</string>
+    <string name="myself">我 的</string>
+    <string name="exit">退出登录</string>
+    <string name="addAddress">+新增地址</string>
+    <string name="prePwd">请输入原密码</string>
+    <string name="newPwd">请输入新密码</string>
+    <string name="confirmNewPwd">确认新密码</string>
+    <string name="empName">员工姓名</string>
+    <string name="empTel">联系方式</string>
+</resources>

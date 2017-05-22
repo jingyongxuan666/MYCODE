@@ -1,0 +1,139 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- “Group6” textview属性 -->
+    <style name="login_tv_logo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">@android:color/holo_blue_dark</item>
+        <item name="android:layout_marginTop">50dip</item>
+       	<item name="android:gravity">center_horizontal</item>        
+    </style>
+    
+  <!-- 登录界面edittext属性 -->
+    <style name="login_et">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dip</item>
+        <item name="android:singleLine">true</item>
+        <!-- <item name="android:layout_weight">3</item> -->
+        <item name="android:background">@android:drawable/edit_text</item>
+    </style>
+    <!-- 登录按钮 -->
+    <style name="login_btn">
+        <item name="android:layout_width">300dip</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textColor">@android:color/holo_blue_dark</item>
+        <item name="android:layout_marginTop">20dip</item>
+    </style>
+    <!-- checkbox风格 -->
+    <style name="login_cb">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#8F8F8F</item>
+    </style>
+    <!-- login中imagebutton公共属性 -->
+    <style name="login_ib">
+        <item name="android:layout_width">20dip</item>
+        <item name="android:layout_height">20dip</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginEnd">10dip</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:background">@drawable/forget_pwd</item>
+        <item name="android:src">@drawable/ic_action_clear</item>
+    </style>
+    <!-- main中RadioButton属性 -->
+    <style name="main_rb">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:drawablePadding">-6dip</item>
+        <item name="android:paddingBottom">5dip</item>
+        <item name="android:paddingTop">5dip</item>
+    </style>
+	<!-- 右上角logo -->
+	<style name="fra_iv_logo">
+	    <item name="android:layout_width">35dip</item>
+	    <item name="android:layout_height">35dip</item>
+	    <item name="android:src">@drawable/ic_logo</item>
+	    <item name="android:scaleType">centerCrop</item>
+	    <item name="android:layout_alignParentStart">true</item>
+	    <item name="android:layout_centerVertical">true</item>
+	</style>
+	
+	<!-- title中间文字 -->
+	<style name="fra_tv_title">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textSize">16sp</item>
+	    <item name="android:textColor">@color/main_blue</item>
+	    <item name="android:layout_centerInParent">true</item>
+	</style>
+	<!-- 四个按钮 -->
+	<style name="btn_state_style">
+	    <item name="android:layout_width">120dip</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textSize">10sp</item>
+	    <item name="android:textColor">#FFFFFF</item>
+	</style>
+	<!-- 项目条目 -->
+	<style name="tv_item_style">
+	    <item name="android:layout_width">0dip</item>
+	    <item name="android:layout_height">50dip</item>
+	    <item name="android:gravity">center_horizontal|center_vertical</item>
+	</style>
+	<!-- 细节显示界面 -->
+	<style name="ll_details">
+	    <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:orientation">horizontal</item>
+	    <item name="android:layout_marginLeft">20dip</item>
+	    <item name="android:layout_marginRight">20dip</item>
+	</style>
+	<style name="tv_details">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	     <item name="android:textColor">@color/main_blue</item>
+	</style>
+	<style name="tv_details_content">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textSize">16sp</item>
+	   
+	</style>
+	
+	<style name="btn_req_style">
+	    <item name="android:layout_width">0dip</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_weight">1</item>
+	    <item name="android:textSize">14sp</item>
+	</style>
+	<style name="et_req_style">
+	    <item name="android:layout_width">200dip</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_marginLeft">20dip</item>
+	    <item name="android:singleLine">true</item>
+	</style>
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hzr.cloudstation.ChoseEmpActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_myTitle_ce"
+        popupTheme="@style/Widget.AppCompat.SearchView.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/mainColor"
+        android:paddingTop="20dp" />
+    <ListView
+        android:id="@+id/lv_choseEmp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+</LinearLayout>

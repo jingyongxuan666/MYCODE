@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.hzr.cloudstation.RegisterActivity">
+
+
+    <com.hzr.cloudstation.myView.ClearEditText
+        android:id="@+id/et_newName"
+        style="@style/LoginET"
+        android:layout_marginTop="100dp"
+        app:myHint="@string/user_name_please"/>
+
+    <com.hzr.cloudstation.myView.ClearEditText
+        android:id="@+id/et_newPwd"
+        style="@style/LoginET"
+        app:myHint="@string/password_please"
+        app:myInputType="password"/>
+
+    <com.hzr.cloudstation.myView.ClearEditText
+        android:id="@+id/et_confirmPwd"
+        style="@style/LoginET"
+        app:myHint="@string/password_confirm_please"
+        app:myInputType="password" />
+
+    <Button
+        android:id="@+id/btn_reg"
+        style="@style/loginBtn"
+        android:text="@string/register" />
+    <CheckBox
+        android:id="@+id/cb_agree"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="我已阅读并同意相关协议"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

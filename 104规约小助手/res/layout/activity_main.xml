@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="待分析数据："
+        android:textColor="#4876FF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5" >
+
+            <EditText
+                android:id="@+id/et_before"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:gravity="start"
+                android:maxLines="100" />
+
+            <ImageButton
+                android:id="@+id/ib_clear1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_action_clear" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_lockAndEdit1"
+            android:layout_width="0dp"
+            android:layout_height="145dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_lockandedit"
+            android:text="锁定"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="分析后数据："
+        android:textColor="#4876FF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5" >
+
+            <EditText
+                android:id="@+id/et_after"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:gravity="start"
+                android:textSize="12sp"
+                android:maxLines="100" />
+
+            <ImageButton
+                android:id="@+id/ib_clear2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_action_clear" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_lockAndEdit2"
+            android:layout_width="0dp"
+            android:layout_height="145dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_lockandedit"
+            android:text="锁定"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:paddingRight="20dp" >
+
+        <Button
+            android:id="@+id/btn_analyse"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_lockandedit"
+            android:text="解析报文"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btn_collect"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_lockandedit"
+            android:text="收藏本条"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btn_collectList"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_lockandedit"
+            android:text="收藏列表"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

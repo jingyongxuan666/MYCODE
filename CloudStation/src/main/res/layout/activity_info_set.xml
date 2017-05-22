@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hzr.cloudstation.InfoSetActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_myTitle_is"
+        android:layout_width="match_parent"
+        android:paddingTop="20dp"
+        android:layout_height="80dp"
+        android:background="@color/mainColor" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="真实姓名:"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"/>
+        <com.hzr.cloudstation.myView.ClearEditText
+            android:id="@+id/et_realName"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"></com.hzr.cloudstation.myView.ClearEditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="联系方式:"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"/>
+        <com.hzr.cloudstation.myView.ClearEditText
+            android:id="@+id/et_userTel"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"></com.hzr.cloudstation.myView.ClearEditText>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_saveInfo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_btn_selector"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="保    存"
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip" >
+
+        <ImageView style="@style/fra_iv_logo" />
+		
+        <TextView
+            style="@style/fra_tv_title"
+            android:text="@string/rb_require" />
+        <ImageButton
+            android:id="@+id/ib_create_req"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/create_contact" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:orientation="horizontal" >
+
+
+        <Button
+            android:id="@+id/btn_sort_all"
+            style="@style/btn_req_style"
+            android:layout_marginLeft="-8dip"
+            android:text="全部" />
+
+        <Button
+            android:id="@+id/btn_sort_finish"
+            style="@style/btn_req_style"
+            android:layout_marginLeft="-8dip"
+            android:text="已完成" />
+
+        <Button
+            android:id="@+id/btn_sort_notStart"
+            style="@style/btn_req_style"
+            android:layout_marginLeft="-8dip"
+            android:text="未开始" />
+
+        <Button
+            android:id="@+id/btn_sort_doing"
+            style="@style/btn_req_style"
+            android:layout_marginLeft="-8dip"
+            android:layout_marginRight="-8dip"
+            android:text="进行中" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="共0条"
+        android:textSize="12sp" />
+
+    <ListView
+        android:id="@+id/lv_requirement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

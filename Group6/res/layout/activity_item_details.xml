@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.group6.activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.group6.activity.ItemDetailsActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip" >
+
+        <ImageView style="@style/fra_iv_logo" />
+
+        <TextView
+            style="@style/fra_tv_title"
+            android:text="项目细节" />
+
+        <ImageButton
+            android:id="@+id/ib_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_menu_delete" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        style="@style/tv_details"
+        android:text="项目进度：" />
+
+    <com.android.demo.view.RoundProgressBar
+        android:id="@+id/rpb_progress"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dip"
+        android_custom:roundColor="#D1D1D1"
+        android_custom:roundProgressColor="@android:color/holo_red_dark"
+        android_custom:roundWidth="10dip"
+        android_custom:textColor="#9A32CD"
+        android_custom:textSize="18sp" />
+
+    <LinearLayout
+        style="@style/ll_details"
+        android:layout_marginTop="30dip" >
+
+        <TextView
+            style="@style/tv_details"
+            android:text="项目编号：" />
+
+        <TextView
+            android:id="@+id/tv_details_id"
+            style="@style/tv_details_content"
+            android:text="@string/hello_world" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ll_details" >
+
+        <TextView
+            style="@style/tv_details"
+            android:text="项目名称：" />
+
+        <TextView
+            android:id="@+id/tv_details_name"
+            style="@style/tv_details_content"
+            android:text="@string/hello_world" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ll_details" >
+
+        <TextView
+            style="@style/tv_details"
+            android:text="委托公司：" />
+
+        <TextView
+            android:id="@+id/tv_details_client"
+            style="@style/tv_details_content"
+            android:text="@string/hello_world" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ll_details" >
+
+        <TextView
+            style="@style/tv_details"
+            android:text="项目状态：" />
+
+        <TextView
+            android:id="@+id/tv_details_state"
+            style="@style/tv_details_content"
+            android:text="@string/hello_world" />
+    </LinearLayout>
+    <LinearLayout style="@style/ll_details" >
+
+        <TextView
+            style="@style/tv_details"
+            android:text="需求数量：" />
+
+        <TextView
+            android:id="@+id/tv_details_num"
+            style="@style/tv_details_content"
+            android:text="@string/hello_world" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ll_details" >
+
+        <TextView
+            style="@style/tv_details"
+            android:text="开始时间：" />
+
+        <TextView
+            android:id="@+id/tv_details_beginDate"
+            style="@style/tv_details_content"
+            android:text="@string/hello_world" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ll_details" >
+
+        <TextView
+            style="@style/tv_details"
+            android:text="结束时间：" />
+
+        <TextView
+            android:id="@+id/tv_details_endDate"
+            style="@style/tv_details_content"
+            android:text="@string/hello_world" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ll_details" >
+
+        <TextView
+            style="@style/tv_details"
+            android:text="项目描述：" />
+
+        <TextView
+            android:id="@+id/tv_details_description"
+            style="@style/tv_details_content"
+            android:text="@string/hello_world" />
+    </LinearLayout>
+
+</LinearLayout>

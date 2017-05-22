@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.hzr.cloudstation.AddExpressActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_myTitle_aex"
+        android:layout_width="match_parent"
+        android:paddingTop="20dp"
+        android:layout_height="80dp"
+        android:background="@color/mainColor"
+        app:popupTheme="@style/Widget.AppCompat.SearchView.ActionBar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Spinner
+            android:id="@+id/sp_company"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"></Spinner>
+        <TextView
+            android:id="@+id/tv_fee"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_expId"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="快递单号：201311308118"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/main_gray_light" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:text="寄件人信息"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/main_gray_light" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="姓名:"
+            style="@style/addExpressTv"/>
+        <EditText
+            android:id="@+id/et_senderName"
+            style="@style/addExpressEt"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="电话:"
+            style="@style/addExpressTv"/>
+        <EditText
+            android:id="@+id/et_senderTel"
+            style="@style/addExpressEt"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="地址:"
+            style="@style/addExpressTv"/>
+        <EditText
+            android:id="@+id/et_senderAddress"
+            style="@style/addExpressEt"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/main_gray_light" />
+    <TextView
+        android:text="收件人信息"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/main_gray_light" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="姓名:"
+            style="@style/addExpressTv"/>
+        <EditText
+            android:id="@+id/et_recName"
+            style="@style/addExpressEt"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="电话:"
+            style="@style/addExpressTv"/>
+        <EditText
+            android:id="@+id/et_recTel"
+            style="@style/addExpressEt"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="地址:"
+            style="@style/addExpressTv"/>
+        <EditText
+            android:id="@+id/et_recAddress"
+            style="@style/addExpressEt"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/main_gray_light" />
+    <Button
+        android:id="@+id/btn_addExp"
+        android:text="添加"
+        android:background="@drawable/login_btn_selector"
+        style="@style/loginBtn" />
+</LinearLayout>
+

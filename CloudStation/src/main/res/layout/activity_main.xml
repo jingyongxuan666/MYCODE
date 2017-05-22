@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hzr.cloudstation.MainActivity">
+
+    <RadioGroup
+        android:id="@+id/rg_menuBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_express"
+            style="@style/main_rb_item"
+            android:drawableTop="@drawable/rb_image_express_selector"
+            android:checked="true"
+            android:text="@string/express" />
+        <RadioButton
+            android:id="@+id/rb_group"
+            style="@style/main_rb_item"
+            android:drawableTop="@drawable/rb_image_group_selector"
+            android:text="@string/group"/>
+        <RadioButton
+            android:id="@+id/rb_myself"
+            style="@style/main_rb_item"
+            android:drawableTop="@drawable/rb_image_person_selector"
+            android:text="@string/myself"/>
+    </RadioGroup>
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_above="@id/rg_menuBar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+
+
+</RelativeLayout>

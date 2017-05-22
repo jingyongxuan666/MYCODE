@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.hzr.cloudstation.ChangePwdActivity"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_myTitle_cp"
+        android:layout_width="match_parent"
+        android:paddingTop="20dp"
+        android:layout_height="80dp"
+        android:background="@color/mainColor"
+        app:popupTheme="@style/Widget.AppCompat.SearchView.ActionBar" />
+    <com.hzr.cloudstation.myView.ClearEditText
+        android:id="@+id/et_prePwd"
+        style="@style/LoginET"
+        app:myHint="@string/prePwd"
+        android:layout_marginTop="50dp"></com.hzr.cloudstation.myView.ClearEditText>
+    <com.hzr.cloudstation.myView.ClearEditText
+        android:id="@+id/et_newPwd"
+        style="@style/LoginET"
+        app:myHint="@string/prePwd"></com.hzr.cloudstation.myView.ClearEditText>
+    <com.hzr.cloudstation.myView.ClearEditText
+        android:id="@+id/et_confirmNewPwd"
+        style="@style/LoginET"
+        app:myHint="@string/prePwd"></com.hzr.cloudstation.myView.ClearEditText>
+    <Button
+        android:id="@+id/btn_changePwd"
+        style="@style/loginBtn"
+        android:text="确认修改"
+        android:background="@drawable/login_btn_selector"/>
+</LinearLayout>

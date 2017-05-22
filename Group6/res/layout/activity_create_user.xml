@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.group6.activity.CreateUserActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip" >
+
+        <ImageView style="@style/fra_iv_logo" />
+
+        <TextView
+            style="@style/fra_tv_title"
+            android:text="添加用户" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="?android:attr/listDivider" />
+    <LinearLayout
+        android:layout_width="300dip"
+        android:paddingLeft="-20dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/ll_details"
+            android:layout_marginTop="25dip" >
+
+            <TextView
+                style="@style/tv_details"
+                android:text="用户名:" />
+
+            <EditText
+                android:id="@+id/et_user_name"
+                style="@style/et_req_style" />
+        </LinearLayout>
+        
+        <LinearLayout style="@style/ll_details" >
+
+            <TextView
+                style="@style/tv_details"
+                android:layout_gravity="start"
+                android:text="密    码:" />
+            <EditText
+                android:id="@+id/et_user_pwd"
+                style="@style/et_req_style" />
+
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/ll_details" >
+
+            <TextView
+                style="@style/tv_details"
+                android:text="部    门:" />
+
+            <Spinner
+                android:id="@+id/sp_user_dept"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:entries="@array/sp_dept" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <Button
+            android:id="@+id/btn_user_create"
+            android:layout_width="300dip"
+            android:layout_height="40dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dip"
+            android:background="@drawable/btn_login_selector"
+            android:text="添加"
+            android:textSize="16sp" />
+
+</LinearLayout>

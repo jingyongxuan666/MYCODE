@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.hzr.cloudstation.FeedBackActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_myTitle_fb"
+        android:layout_width="match_parent"
+        android:paddingTop="20dp"
+        android:layout_height="80dp"
+        android:background="@color/mainColor"
+        app:popupTheme="@style/Widget.AppCompat.SearchView.ActionBar"/>
+    <EditText
+        android:id="@+id/et_feedBackContext"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:hint="请输入反馈内容"
+        android:background="@android:drawable/edit_text"
+        android:gravity="start"
+        android:maxLines="10"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tb_myTitle_fb"
+        android:layout_marginTop="80dp"/>
+    <Button
+        android:id="@+id/btn_sendFb"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="发送反馈"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/et_feedBackContext"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/exit_btn_selector"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

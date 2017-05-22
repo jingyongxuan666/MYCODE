@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- activity_login -->
+    <string name="app_name">Group6</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_index">IndexActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="login_welcome">Group6</string>
+    <!-- <string name="login_name">用户名：</string> -->
+    <string name="login_name_hint">用户名</string>
+    <string name="login_password_hint">密码</string>
+    <!-- <string name="login_password">密码：</string> -->
+    <string name="login_button">登录</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="rem_info">记住密码</string>
+    <string name="autoLogin">自动登录</string>
+
+    <string-array name="dept">
+        <item>项目经理</item>
+        <item>开发部门</item>
+        <item>需求部门</item>
+    </string-array>
+
+    <!-- activity_main -->
+    <string name="exit_cur_user">退出当前账号</string>
+    <string name="rb_task">任务</string>
+    <string name="rb_require">需求</string>
+    <string name="rb_myinfo">我</string>
+    <string name="rb_item">项目</string>
+    <string name="tv_item">项目统计</string>
+    <string name="rb_group">组织</string>
+    <string name="title_activity_item_list">ItemListActivity</string>
+    <string name="title_activity_item_details">ItemDetailsActivity</string>
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+    <string name="title_activity_task_detail">TaskDetailActivity</string>
+    <string name="title_activity_user_detail">UserDetailActivity</string>
+    <string name="title_activity_create_req">CreateReqActivity</string>
+
+    <string-array name="sp_first">
+        <item>非常紧急(A)</item>
+        <item>紧急(B)</item>
+        <item>普通(C)</item>
+    </string-array>
+
+
+    <string name="title_activity_create_user">CreateUserActivity</string>
+	
+        <string-array name="sp_dept">
+        <item>项目经理</item>
+        <item>需求部门</item>
+        <item>开发部门</item>
+    </string-array>
+</resources>

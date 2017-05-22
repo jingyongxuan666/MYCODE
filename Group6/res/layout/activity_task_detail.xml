@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.group6.activity.TaskDetailActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip" >
+
+        <ImageView style="@style/fra_iv_logo" />
+
+        <TextView
+            style="@style/fra_tv_title"
+            android:text="任务详情" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/tv_details"
+        android:text="优先级" />
+
+    <TextView
+        android:id="@+id/tv_task_prio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dip"
+        android:text="A"
+        android:textColor="@color/main_blue"
+        android:textSize="35sp" />
+
+    <LinearLayout
+        style="@style/ll_details"
+        android:layout_marginTop="25dip" >
+
+        <TextView
+            style="@style/tv_details"
+            android:text="任务名称:" />
+
+        <TextView
+            android:id="@+id/tv_task_name"
+            style="@style/tv_details_content" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ll_details" >
+
+        <TextView
+            style="@style/tv_details"
+            android:text="所属项目:" />
+
+        <TextView
+            android:id="@+id/tv_task_project"
+            style="@style/tv_details_content" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ll_details" >
+
+        <TextView
+            style="@style/tv_details"
+            android:text="任务状态:" />
+
+        <TextView
+            android:id="@+id/tv_task_state"
+            style="@style/tv_details_content" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ll_details" >
+
+        <TextView
+            style="@style/tv_details"
+            android:text="开始时间:" />
+
+        <TextView
+            android:id="@+id/tv_task_bdate"
+            style="@style/tv_details_content" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ll_details" >
+
+        <TextView
+            style="@style/tv_details"
+            android:text="结束时间:" />
+
+        <TextView
+            android:id="@+id/tv_task_edate"
+            style="@style/tv_details_content" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ll_details" >
+
+        <TextView
+            style="@style/tv_details"
+            android:text="具体内容:" />
+
+        <TextView
+            android:id="@+id/tv_task_detail"
+            style="@style/tv_details_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ll_details"
+        android:layout_marginTop="20dip"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:background="@drawable/btn_login_selector"
+            android:text="开始"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_end"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:background="@drawable/btn_exit_selector"
+            android:text="结束"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
